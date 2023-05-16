@@ -1,0 +1,44 @@
+
+
+
+1. 
+첫번째 input 안에 곡명을 입력, 
+두번째 input 안에 가수/작곡을 입력 
+
+2. 
+input에 입력한 값을 버튼을 누르면 목록
+객체에 데이터를 추가하고, 
+아니면 삭제될 수 있도록 
+
+const obj = { title: "bille", singer: "bille" };
+PlayListMock.playlist.push({ ...obj });
+
+* 1번 로직 
+
+input 안에 곡명과 가수 이름을 입력한다 
+onChange 를 이용해서 e.target.value이용 
+그리고 e.target.value 를 받아와서 
+객체를 만들어 주어야 한다. 
+
+객체를 어떻게 만들 것이냐?
+
+const obj = {title : "", singer : ""};
+
+const [todolist, setTodolist] = useState(
+    {
+        title : "";
+        singer : ""
+    }
+)
+
+const [input1, setInput1] = useState("");
+const [input2, setInput2] = useState("");
+
+const changeState = (e) => {
+    setInput1(e.target.value);
+}
+const changeState = (e) => {
+    setInput1(e.target.value);
+}
+
+

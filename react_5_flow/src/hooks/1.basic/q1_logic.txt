@@ -1,0 +1,26 @@
+
+
+input의 value가 placeholder 값과 같아지면
+초록색 글씨로 올바르게 입력하셨습니다 노출
+> style component
+
+만약 입력하지 않았다면 올바르게 글을 
+작성해 주세요라는 문구를 붉은색 글씨로 노출
+
+보이기 버튼을 누르면 버튼 내부의 텍스는 숨기기로 바뀌고,
+아래 보이는 p태그가 보여야 한다. 
+반대로 숨기기 텍스트로 바뀐 버튼을 누르면 
+p태그는 보이지 않아야 한다. 
+
+1) onChange를 이용해서 e.target.placeholder를 받아오기
+2) 
+----------------------------------------
+
+1) 버튼의 텍스트를 상태변수로 만들어 준다. 
+   {buttonText, setButtonText} = useState("보이기");
+
+2) 버튼에 onClick 속성을 넣어서 onClick = {!setButtonText}
+    으로 변경 
+
+3) p태그에는 props를 이용해서 show = {setButtonText} 를 
+넣어주면 될 것 같은 .. 
